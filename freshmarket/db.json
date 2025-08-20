@@ -1,0 +1,44 @@
+{
+    "products": [
+      { "id": 1, "name": "Organic Apple", "price": 120, "unit": "1 kg", "image": "https://wallpaperaccess.com/full/1351651.jpg", "description": "Fresh organic apples." },
+      { "id": 2, "name": "Banana Bunch", "price": 60, "unit": "1 dozen", "image": "https://wallpaperaccess.com/thumb/7498231.jpg", "description": "A bunch of ripe bananas." },
+      { "id": 3, "name": "Carrot", "price": 80, "unit": "1 kg", "image": "https://wallpaperaccess.com/thumb/1598000.jpg", "description": "Crunchy carrots." },
+      { "id": 4, "name": "Strawberries Pack", "price": 300, "unit": "250 g", "image": "https://wallpaperaccess.com/thumb/1115874.jpg", "description": "Sweet strawberries pack." },
+      { "id": 5, "name": "Spinach", "price": 40, "unit": "250 g", "image": "https://wallpaperaccess.com/full/7171345.jpg", "description": "Fresh green spinach." },
+      { "id": 6, "name": "Tomatoes", "price": 90, "unit": "1 kg", "image": "https://wallpaperaccess.com/thumb/1462852.jpg", "description": "Juicy red tomatoes." },
+      { "id": 7, "name": "Potatoes", "price": 50, "unit": "1 kg", "image": "https://wallpaperaccess.com/thumb/1986380.jpg", "description": "Versatile potatoes." },
+      { "id": 8, "name": "Onions", "price": 70, "unit": "1 kg", "image": "https://wallpaperaccess.com/thumb/1912934.jpg", "description": "Flavorful onions." },
+      { "id": 9, "name": "Broccoli", "price": 150, "unit": "500 g", "image": "https://wallpaperaccess.com/full/2721415.jpg", "description": "Fresh broccoli florets." },
+      { "id": 10, "name": "Cauliflower", "price": 130, "unit": "1 pc", "image": "https://wallpaperaccess.com/full/4801360.jpg", "description": "White cauliflower head." },
+      { "id": 11, "name": "Grapes", "price": 200, "unit": "500 g", "image": "https://wallpaperaccess.com/thumb/1466835.jpg", "description": "Seedless grapes." },
+      { "id": 12, "name": "Mangoes", "price": 250, "unit": "1 dozen", "image": "https://wallpaperaccess.com/thumb/1201768.jpg", "description": "Sweet Alphonso mangoes." }
+    ],
+    "best-sellers": [
+      { "id": 1, "productId": 1 },
+      { "id": 2, "productId": 2 },
+      { "id": 3, "productId": 4 },
+      { "id": 4, "productId": 7 },
+      { "id": 5, "productId": 12 }
+    ],
+    "new-arrivals": [
+      { "id": 1, "productId": 5 },
+      { "id": 2, "productId": 6 },
+      { "id": 3, "productId": 9 },
+      { "id": 4, "productId": 10 },
+      { "id": 5, "productId": 11 }
+    ],
+    "stock": [
+      { "productId": 1, "level": 15 },
+      { "productId": 2, "level": 30 },
+      { "productId": 3, "level": 20 },
+      { "productId": 4, "level": 8 },
+      { "productId": 5, "level": 25 },
+      { "productId": 6, "level": 18 },
+      { "productId": 7, "level": 40 },
+      { "productId": 8, "level": 35 },
+      { "productId": 9, "level": 12 },
+      { "productId": 10, "level": 10 },
+      { "productId": 11, "level": 22 },
+      { "productId": 12, "level": 5 }
+    ]
+  }  
