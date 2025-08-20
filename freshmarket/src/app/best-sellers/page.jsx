@@ -4,7 +4,7 @@ import { fetchJSON, fetchProductsByIdsStrict } from '@/lib/api';
 export const revalidate = 60; // ISR (60s)
 
 export default async function BestSellersPage() {
-  const list = await fetchJSON('/best-sellers'); // [{id, productId}] or [1,2,...]
+  const list = await fetchJSON('/best-sellers');
 
   // normalize to numeric/string ids safely
   let ids = Array.isArray(list)
@@ -12,7 +12,7 @@ export default async function BestSellersPage() {
     : [];
   ids = ids.map((v) => String(v)).filter((v) => v); // use strings to match server behavior
 
-  // strict per‑ID fetch (works even if /products?id=... misbehaves)
+  // strict per‑ID fetch 
   const products = await fetchProductsByIdsStrict(ids);
 
   return (

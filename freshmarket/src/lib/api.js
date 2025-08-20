@@ -7,14 +7,12 @@ export async function fetchJSON(path, init) {
   return res.json();
 }
 
-/** Optional batch (kept for reference) */
 export async function fetchProductsByIds(ids, init) {
   if (!ids?.length) return [];
   const q = ids.map((id) => `id=${encodeURIComponent(id)}`).join('&');
   return fetchJSON(`/products?${q}`, init);
 }
 
-/** ✅ STRICT per‑ID join: returns EXACTLY the requested ids, in order */
 export async function fetchProductsByIdsStrict(ids, init) {
   if (!ids?.length) return [];
   const unique = Array.from(new Set(ids));

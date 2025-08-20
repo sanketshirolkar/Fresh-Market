@@ -13,7 +13,6 @@ export default function StockLevel({ productId }) {
   if (isLoading) return <span className="text-sm text-gray-400">Loading stock…</span>;
   if (error) return <span className="text-sm text-red-600">Stock unavailable</span>;
 
-  // Your JSON uses "level" (not "quantity"), so we normalize here:
   const first = Array.isArray(data) && data[0] ? data[0] : {};
   const qty = first.quantity ?? first.level ?? 0;
 

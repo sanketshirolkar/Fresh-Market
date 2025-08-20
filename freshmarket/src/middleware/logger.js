@@ -1,4 +1,3 @@
-// src/middleware/logger.js
 export function logRequest(req) {
     // req is a NextRequest running on the Edge runtime
     const { method, nextUrl } = req;

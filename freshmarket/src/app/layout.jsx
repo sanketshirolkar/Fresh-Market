@@ -1,4 +1,3 @@
-// src/app/layout.jsx
 import './globals.css';
 import Link from 'next/link';
 
@@ -11,7 +10,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        {/* Header + Nav */}
         <header className="border-b bg-white">
           <div className="container flex items-center justify-between py-4">
             <Link href="/" className="text-xl font-bold">
@@ -31,10 +29,7 @@ export default function RootLayout({ children }) {
           </div>
         </header>
 
-        {/* Page content */}
         <main className="container py-8">{children}</main>
-
-        {/* Footer */}
         <footer className="mt-16 border-t bg-white">
           <div className="container py-6 text-sm text-gray-500 flex items-center justify-between">
             <span>© {new Date().getFullYear()} FreshMarket</span>

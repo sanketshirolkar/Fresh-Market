@@ -1,4 +1,3 @@
-// src/app/inventory/page.jsx
 export const dynamic = 'force-static'; // pure SSG snapshot
 
 import Image from 'next/image';
@@ -9,17 +8,16 @@ function toStockMap(rows) {
   const map = new Map();
   for (const row of rows || []) {
     const id = String(row.productId);
-    const level = row.quantity ?? row.level ?? 0; // handle either field name
+    const level = row.quantity ?? row.level ?? 0;
     map.set(id, level);
   }
   return map;
 }
 
 export default async function InventoryPage() {
-  // Both runs at build time during `next build` (and on re-build in dev):
   const [products, stockRows] = await Promise.all([
-    fetchJSON('/products'), // array of products
-    fetchJSON('/stock'),    // array like [{productId, level}, ...]
+    fetchJSON('/products'), 
+    fetchJSON('/stock'),    
   ]);
 
   const stock = toStockMap(stockRows);
